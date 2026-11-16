@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- Makes the website fit properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Falke Wears - Shop</title>
+
+    <style>
+
+        /* =========================
+           BASIC RESET
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: rgb(2, 11, 22);
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .home {
+            background: rgb(6, 20, 38);
+            min-height: 50px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            gap: 30px;
+        }
+
+
+        /* BRAND */
+
+        .falke-text {
+            color: rgb(240, 201, 133);
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+
+        /* NAVIGATION LINKS */
+
+        .home-text {
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: opacity 0.15s,
+                        color 0.15s;
+        }
+        .home-text:hover {
+            text-decoration: underline;
+            color: rgb(240, 201, 133);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 6px;
+        }
+        .home-text:active {
+            opacity: 0.75;
+        }
+        /* SEARCH */
+
+        /* CART */
+
+        .cart-icon {
+            color: white;
+            margin: 0;
+            cursor: pointer;
+        }
+        /* PROFILE */
+        .profile-icon {
+            color: white;
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: color 0.15s,
+                        opacity 0.15s;
+        }
+        .profile-icon:hover {
+            color: rgb(240, 201, 133);
+        }
+        .profile-icon:active {
+            opacity: 0.75;
+        }
+        /* =========================
+           TABLET
+        ========================= */
+        @media (max-width: 900px) {
+            .home {
+                gap: 18px;
+                padding: 0 3%;
+            }
+        }
+        /* =========================
+           PHONE
+        ========================= */
+
+        @media (max-width: 600px) {
+            .home {
+                min-height: auto;
+                padding: 12px 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+            .falke-text {
+                width: 100%;
+
+                text-align: center;
+            }
+            .home-text {
+                font-size: 13px;
+            }
+            .cart-icon {
+                margin-left: auto;
+            }
+            .profile-icon {
+                font-size: 13px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<!-- =========================
+     NAVIGATION
+========================= -->+
+<div class="home">
+    <p class="falke-text">
+        FALKE WEARS
+    </p>
+    <a href="index.html" class="home-text">
+        Home
+    </a>
+    <a href="shop.html" class="home-text">
+        Shop
+    </a>
+    <a href="about.html" class="home-text">
+        About
+    </a>
+    <a href="contact.html" class="home-text">
+        Contact
+    </a>
+    <p class="cart-icon">
+        &#128722;
+    </p>
+    <p class="profile-icon">
+        Profile &#128100;
+    </p>
+</div>
+</body>
+
+</html>
